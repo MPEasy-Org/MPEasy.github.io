@@ -41,6 +41,8 @@ jobs:
         run: cd bin; curl https://micropython.org/resources/firmware/LOLIN_S2_PICO-$DATE-$VERSION.bin -O
       - name: Download Feather S2 Neo
         run: cd bin; curl https://micropython.org/resources/firmware/UM_FEATHERS2NEO-$DATE-$VERSION.bin -O
+      - name: Download Unexpected Maker TinyS3
+        run: cd bin; curl https://micropython.org/resources/firmware/UM_TINYS3-$DATE-$VERSION.bin -O
       - name: Download Lolin C3 Mini
         run: cd bin; curl https://micropython.org/resources/firmware/LOLIN_C3_MINI-$DATE-$VERSION.bin -O
       # Commit downloaded release
