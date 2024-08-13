@@ -4,7 +4,7 @@
   "builds": [
     {
       "chipFamily": "ESP32-S2",
-      "parts": [{ "path": "bin/UM_FEATHERS2NEO-20240602-v1.23.0.bin", "offset": 4096 }]
+      "parts": [{ "path": "bin/UM_FEATHERS2NEO-20240602-v1.23.0.app-bin", "offset": 4096 }]
     }
   ]
 }
