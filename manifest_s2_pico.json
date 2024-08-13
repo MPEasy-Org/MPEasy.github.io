@@ -1,5 +1,5 @@
 {
-  "name": "MicroPython ESP32",
+  "name": "MicroPython for Lolin/Wemos S2 Pico",
   "version": "v1.23.0",
   "builds": [
     {

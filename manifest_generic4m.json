@@ -1,5 +1,5 @@
 {
-  "name": "Generic 4M Flash, RAM<=1M",
+  "name": "MicroPython for Generic 4M Flash, RAM<=1M",
   "version": "v1.23.0",
   "builds": [
     {

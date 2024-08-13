@@ -32,8 +32,8 @@ jobs:
         run: cd bin; curl https://micropython.org/resources/firmware/ESP8266_GENERIC-$DATE-$VERSION.bin -O
       - name: Download ESP32-S2 Generic
         run: cd bin; curl https://micropython.org/resources/firmware/ESP32_GENERIC_S2-$DATE-$VERSION.bin -O
-      - name: Download ESP32-S3 Generic
-        run: cd bin; curl https://micropython.org/resources/firmware/ESP32_GENERIC_S3-$DATE-$VERSION.bin -O
+      - name: Download ESP32-S3 Generic 4M Flash
+        run: cd bin; curl https://micropython.org/resources/firmware/ESP32_GENERIC_S3-FLASH_4M-$DATE-$VERSION.bin -O
       - name: Download ESP32-C3 Generic
         run: cd bin; curl https://micropython.org/resources/firmware/ESP32_GENERIC_C3-$DATE-$VERSION.bin -O
       # Download for Secific Boards

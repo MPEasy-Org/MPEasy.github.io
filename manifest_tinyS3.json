@@ -1,5 +1,5 @@
 {
-  "name": "MicroPython ESP32",
+  "name": "MicroPython for Unexpected Maker TinyS3",
   "version": "v1.23.0",
   "builds": [
     {
