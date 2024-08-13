@@ -8,7 +8,7 @@ on:
 
   # Runs after new MicroPython release is downloaded
   workflow_run:
-    workflows: ["Download MicroPython Release"]
+    workflows: ["Download MicroPython Release Binaries"]
     types:
       - completed
 

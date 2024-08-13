@@ -1,4 +1,4 @@
-name: Download MicroPython Release
+name: Download MicroPython Release Binaries
 
 on:
   # Run manually from the Actions tab
