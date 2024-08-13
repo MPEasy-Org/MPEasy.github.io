@@ -4,6 +4,11 @@ on:
   # Run manually from the Actions tab
   workflow_dispatch:
 
+  # Run when this action changes
+  push:
+    paths:
+      - '.github/workflows/download-mp-release.yaml'
+
 env:
   VERSION: v1.23.0
   DATE: 20240602
