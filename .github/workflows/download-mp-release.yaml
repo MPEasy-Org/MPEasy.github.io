@@ -45,8 +45,9 @@ jobs:
       - name: Download Lolin S2 Pico
         run: cd bin; curl https://micropython.org/resources/firmware/LOLIN_S2_PICO-$DATE-$VERSION.bin -O
       - name: Download Feather S2 Neo
-      #  run: cd bin; curl https://micropython.org/resources/firmware/UM_FEATHERS2NEO-$DATE-$VERSION.bin -O
-        run: cd bin; curl https://micropython.org/resources/firmware/UM_FEATHERS2NEO-$DATE-$VERSION.app-bin -O
+        run: cd bin; curl https://micropython.org/resources/firmware/UM_FEATHERS2NEO-$DATE-$VERSION.bin -O
+      - name: Download M5 Stack Atom
+        run: cd bin; curl https://micropython.org/resources/firmware/M5STACK_ATOM-$DATE-$VERSION.bin -O
       - name: Download Unexpected Maker TinyS3
         run: cd bin; curl https://micropython.org/resources/firmware/UM_TINYS3-$DATE-$VERSION.bin -O
       - name: Download Lolin C3 Mini
