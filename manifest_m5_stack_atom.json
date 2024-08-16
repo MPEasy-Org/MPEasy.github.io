@@ -1,5 +1,5 @@
 {
-  "name": "MicroPython for Generic 4M Flash, RAM<=1M",
+  "name": "MicroPython for M5 Stack Atom",
   "version": "v1.23.0",
   "builds": [
     {
