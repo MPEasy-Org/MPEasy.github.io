@@ -40,26 +40,23 @@ jobs:
             curl https://micropython.org/resources/firmware/$BUILD-$DATE-$VERSION.bin -O
             cd ..
           done
-        run: cd bin; curl https://micropython.org/resources/firmware/ESP32_GENERIC-$DATE-$VERSION.bin -O
-#      - name: Download ESP8266 Generic
-#        run: cd bin; curl https://micropython.org/resources/firmware/ESP8266_GENERIC-$DATE-$VERSION.bin -O
-#      - name: Download ESP32-S2 Generic
-#        run: cd bin; curl https://micropython.org/resources/firmware/ESP32_GENERIC_S2-$DATE-$VERSION.bin -O
-#      - name: Download ESP32-S3 Generic 4M Flash
-#        run: cd bin; curl https://micropython.org/resources/firmware/ESP32_GENERIC_S3-FLASH_4M-$DATE-$VERSION.bin -O
-#      - name: Download ESP32-C3 Generic
-#        run: cd bin; curl https://micropython.org/resources/firmware/ESP32_GENERIC_C3-$DATE-$VERSION.bin -O
       # Download for Secific Boards
-      - name: Download Lolin S2 Pico
-        run: cd bin; curl https://micropython.org/resources/firmware/LOLIN_S2_PICO-$DATE-$VERSION.bin -O
-      - name: Download Feather S2 Neo
-        run: cd bin; curl https://micropython.org/resources/firmware/UM_FEATHERS2NEO-$DATE-$VERSION.bin -O
-      - name: Download M5 Stack Atom
-        run: cd bin; curl https://micropython.org/resources/firmware/M5STACK_ATOM-$DATE-$VERSION.bin -O
-      - name: Download Unexpected Maker TinyS3
-        run: cd bin; curl https://micropython.org/resources/firmware/UM_TINYS3-$DATE-$VERSION.bin -O
-      - name: Download Lolin C3 Mini
-        run: cd bin; curl https://micropython.org/resources/firmware/LOLIN_C3_MINI-$DATE-$VERSION.bin -O
+        run: |
+          for BUILD in LOLIN_S2_PICO UM_FEATHERS2NEO M5STACK_ATOM UM_TINYS3 LOLIN_C3_MINI; do
+            cd bin
+            curl https://micropython.org/resources/firmware/$BUILD-$DATE-$VERSION.bin -O
+            cd ..
+          done
+#      - name: Download Lolin S2 Pico
+#        run: cd bin; curl https://micropython.org/resources/firmware/LOLIN_S2_PICO-$DATE-$VERSION.bin -O
+#      - name: Download Feather S2 Neo
+#        run: cd bin; curl https://micropython.org/resources/firmware/UM_FEATHERS2NEO-$DATE-$VERSION.bin -O
+#      - name: Download M5 Stack Atom
+#        run: cd bin; curl https://micropython.org/resources/firmware/M5STACK_ATOM-$DATE-$VERSION.bin -O
+#      - name: Download Unexpected Maker TinyS3
+#        run: cd bin; curl https://micropython.org/resources/firmware/UM_TINYS3-$DATE-$VERSION.bin -O
+#      - name: Download Lolin C3 Mini
+#        run: cd bin; curl https://micropython.org/resources/firmware/LOLIN_C3_MINI-$DATE-$VERSION.bin -O
       # Commit downloaded release
       - name: Commit and Push Changes
         env:
