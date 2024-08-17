@@ -49,9 +49,6 @@ jobs:
         run: |
           for file in manifest*.json; do
             sed -i -e "s/mpVersion/$VERSION/g" -e "s/mpDate/$DATE/g" "$file"
-#            TEMP_SED=$(sed -e "s/mpVersion/$VERSION/g" -e "s/mpDate/$DATE/g" "$file")
-#            echo "$TEMP_SED" > "$file"
-#            unset TEMP_SED
           done
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
