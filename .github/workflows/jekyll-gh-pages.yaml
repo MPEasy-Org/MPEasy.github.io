@@ -53,7 +53,9 @@ jobs:
         run: |
           for file in _site/manifest*.json; do
             TEMP_SED=$(sed -e "s/mpVersion/$VERSION/g" -e "s/mpDate/$DATE/g" "$file")
+            chmod u+w "$file"
             echo "$TEMP_SED" > "$file"
+            chmod u-w "$file"
             unset TEMP_SED
           done
       - name: Upload artifact
