@@ -52,7 +52,9 @@ jobs:
       - name: Edit MP Version and Date into Manifests
         run: |
           for file in _site/manifest*.json; do
-            sed -i -e "s/mpVersion/$VERSION/g" -e "s/mpDate/$DATE/g" "$file"
+            TEMP_SED=$(sed -e "s/mpVersion/$VERSION/g" -e "s/mpDate/$DATE/g" "$file")
+            echo "$TEMP_SED" > "$file"
+            unset TEMP_SED
           done
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
