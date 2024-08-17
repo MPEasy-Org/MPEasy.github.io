@@ -35,7 +35,7 @@ jobs:
       # Download generic firmware from MicroPython.Org site
       - name: Download Generic Boards
         run: |
-          for BUILD in ESP32_GENERIC ESP8266_GENERIC ESP32_GENERIC_S2 ESP32_GENERIC_S3-FLASH_4M ESP32_GENERIC_C3; do
+          for BUILD in ESP32_GENERIC ESP32_GENERIC_S3-FLASH_4M ESP32_GENERIC_C3; do
             cd bin
             curl https://micropython.org/resources/firmware/$BUILD-$DATE-$VERSION.bin -O
             cd ..
@@ -43,7 +43,7 @@ jobs:
       # Download for Secific Boards
       - name: Download Specific Boards
         run: |
-          for BUILD in LOLIN_S2_PICO UM_FEATHERS2NEO M5STACK_ATOM UM_TINYS3 LOLIN_C3_MINI; do
+          for BUILD in M5STACK_ATOM UM_TINYS3 LOLIN_C3_MINI; do
             cd bin
             curl https://micropython.org/resources/firmware/$BUILD-$DATE-$VERSION.bin -O
             cd ..
