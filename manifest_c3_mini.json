@@ -1,10 +1,10 @@
 {
   "name": "MicroPython for Lolin/Wemos C3 Mini",
-  "version": "v1.23.0",
+  "version": "mpVersion",
   "builds": [
     {
       "chipFamily": "ESP32-C3",
-      "parts": [{ "path": "bin/LOLIN_C3_MINI-20240602-v1.23.0.bin", "offset": 0 }]
+      "parts": [{ "path": "bin/LOLIN_C3_MINI-mpDate-mpVersion.bin", "offset": 0 }]
     }
   ]
 }

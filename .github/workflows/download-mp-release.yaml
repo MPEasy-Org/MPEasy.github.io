@@ -22,7 +22,7 @@ jobs:
       # Setup
       - name: Checkout Repository
         uses: actions/checkout@v4
-      - name: Set variables
+      - name: Set Variables
         run: |
           INC_VER=$(cat _includes/mpVersion.txt)
           echo "VERSION=$INC_VER" >> $GITHUB_ENV
@@ -43,7 +43,7 @@ jobs:
       # Download for Secific Boards
       - name: Download Specific Boards
         run: |
-          for BUILD in LOLIN_S2_PICO UM_FEATHERS2NEO M5STACK_ATOM UM_TINYS3 LOLIN_C3_MINI; do
+          for BUILD in M5STACK_ATOM UM_TINYS3 LOLIN_C3_MINI; do
             cd bin
             curl https://micropython.org/resources/firmware/$BUILD-$DATE-$VERSION.bin -O
             cd ..

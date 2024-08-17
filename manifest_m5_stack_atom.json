@@ -1,10 +1,10 @@
 {
   "name": "MicroPython for M5 Stack Atom",
-  "version": "v1.23.0",
+  "version": "mpVersion",
   "builds": [
     {
       "chipFamily": "ESP32",
-      "parts": [{ "path": "bin/M5STACK_ATOM-20240602-v1.23.0.bin", "offset": 4096 }]
+      "parts": [{ "path": "bin/M5STACK_ATOM-mpDate-mpVersion.bin", "offset": 4096 }]
     }
   ]
 }
