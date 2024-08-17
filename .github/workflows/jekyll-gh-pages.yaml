@@ -43,6 +43,17 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Set Variables
+        run: |
+          INC_VER=$(cat _includes/mpVersion.txt)
+          echo "VERSION=$INC_VER" >> $GITHUB_ENV
+          INC_DATE=$(cat _includes/mpDate.txt)
+          echo "DATE=$INC_DATE" >> $GITHUB_ENV
+      - name: Edit MP Version and Date into Manifests
+        run: |
+          for file in _site/manifest*.json; do
+            sed -i -e "s/mpVersion/$VERSION/g" -e "s/mpDate/$DATE/g" "$file"
+          done
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 

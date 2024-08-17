@@ -4,7 +4,7 @@
   "builds": [
     {
       "chipFamily": "ESP32-C3",
-      "parts": [{ "path": "bin/LOLIN_C3_MINI-{% include mpDate.txt %}-{% include mpVersion.txt %}.bin", "offset": 0 }]
+      "parts": [{ "path": "bin/LOLIN_C3_MINI-mpDate-mpVersion.bin", "offset": 0 }]
     }
   ]
 }
