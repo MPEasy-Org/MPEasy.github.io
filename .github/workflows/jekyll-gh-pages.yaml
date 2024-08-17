@@ -38,6 +38,18 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Get git commit hash for inclusion in the site
         run: tools/getCommitHash.sh
+      - name: Set Variables
+        run: |
+          INC_VER=$(cat _includes/mpVersion.txt)
+          echo "VERSION=$INC_VER" >> $GITHUB_ENV
+          INC_DATE=$(cat _includes/mpDate.txt)
+          echo "DATE=$INC_DATE" >> $GITHUB_ENV
+      - name: Edit MP Version and Date into Manifests
+        # It looks sketchy to edit files checked out of the repo, but the changes won't be committed
+        run: |
+          for file in manifest*.json; do
+            sed -i -e "s/mpVersion/$VERSION/g" -e "s/mpDate/$DATE/g" "$file"
+          done
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
