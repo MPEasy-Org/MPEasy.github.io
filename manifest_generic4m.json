@@ -15,10 +15,6 @@
       "parts": [{ "path": "bin/ESP32_GENERIC_C3-20240602-v1.23.0.bin", "offset": 0 }]
     },
     {
-      "chipFamily": "ESP32-S2",
-      "parts": [{ "path": "bin/ESP32_GENERIC_S2-20240602-v1.23.0.bin", "offset": 4096 }]
-    },
-    {
       "chipFamily": "ESP32-S3",
       "parts": [{ "path": "bin/ESP32_GENERIC_S3-FLASH_4M-20240602-v1.23.0.bin", "offset": 0 }]
     }
