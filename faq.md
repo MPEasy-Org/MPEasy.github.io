@@ -2,7 +2,7 @@
 ---
 # Freqyently Asked Quesions
 
-## XXX: site
+## XXX: Category
 
 **Q: Why not support `.uf2` format downloads?**
 
@@ -14,13 +14,13 @@ as it is to just install MicroPython from a `.bin` file.
 
 **Q: What version of MicroPython is installed?**
 
-**A:** The latest release version from [MicroPython.Org](https://micropython.org/download/) downloads,
+**A:** The latest release version from [MicroPython.Org downloads](https://micropython.org/download/),
 currently `{% include mpVersion.txt %}`.
 There may be a brief lag in updating because this site is manually updated and rebuilt.
 
 **Q: Can I install older versions? Daily builds?**
 
-**A:** Those can be directly downloaded from MicroPython.Org XXX linkMe
+**A:** Those can be directly downloaded from [MicroPython.Org downloads](https://micropython.org/download/).
 The focus here is simply on helping people install the latest version.
 
 **Q: Where do the MicroPython binaries come from?**
