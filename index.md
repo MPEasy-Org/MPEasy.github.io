@@ -17,12 +17,12 @@ on your MCU.
 
 ### Pre-Install Checklist
 * MicroPython Installation [Overview](overview.html)
-* Check Browser Requirements
-* Check PC Requirements
-* Check USB Serial Drivers
-* Identify Your MCU Chip and Board
-* Connect Your MCU
-* Enter Download Mode
+* Check [Browser](browser.html) Requirements
+* Check [PC](pc.html) Requirements
+* Check [USB Serial Drivers](drivers.html)
+* [Identify](identify.html) Your MCU Chip and Board
+* [Connect](connect.html) Your MCU
+* Enter [Download Mode](download.html)
 
 After completing the pre-install checklist above,
 select a build for a generic board with your flash and RAM size, or for a specific board:
