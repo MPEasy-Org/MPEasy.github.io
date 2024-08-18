@@ -3,13 +3,29 @@ layout: home
 title: "MicroPython Easy Install"
 ---
 
+<style>
+  .invisible {
+    visibility: hidden;
+  }
+</style>
+
 ## For ESP32 Famly MCUs
 
 Install the latest MicroPython release
 (<code>{% include mpVersion.txt %}</code>)
 on your MCU.
 
-Select a build for a generic board with your flash and RAM size, or for a specific board:
+### Pre-Install Checklist
+* MicroPython Installation [Overview](overview.html)
+* Check Browser Requirements
+* Check PC Requirements
+* Check USB Serial Drivers
+* Identify Your MCU Chip and Board
+* Connect Your MCU
+* Enter Download Mode
+
+After completing the pre-install checklist above,
+select a build for a generic board with your flash and RAM size, or for a specific board:
 
 <ul style="list-style-type: none; padding-left: 0; margin-left: 0;">
 <li>
@@ -27,15 +43,15 @@ Select a build for a generic board with your flash and RAM size, or for a specif
 </li>
 </ul>
 
-<style>
-  .invisible {
-    visibility: hidden;
-  }
-</style>
-
 <p class="button-row" align="center">
 <esp-web-install-button class="invisible"></esp-web-install-button>
 </p>
+
+### Post-Install Checklist
+
+* Check for Success
+* Try an IDE
+* Example Projects
 
 <script>
   document.querySelectorAll('input[name="type"]').forEach(radio =>
