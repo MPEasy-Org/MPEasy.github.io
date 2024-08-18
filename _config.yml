@@ -1,5 +1,10 @@
+theme: just-the-docs
 exclude:
   - tidy.cfg
   - tools
   - ReadMe.md
   - CNAME
+
+#title: MPEasy.Org
+#description: MicroPython Easy Install for ESP32 Family MCUs
+#url: MPEasy.Org
