@@ -27,7 +27,13 @@ Select a build for a generic board with your flash and RAM size, or for a specif
 </li>
 </ul>
 
-Content after subhead
+Content before button
+
+<p class="button-row" align="center">
+<esp-web-install-button class="invisible"></esp-web-install-button>
+</p>
+
+Content after button
 
 <script>
   document.querySelectorAll('input[name="type"]').forEach(radio =>
