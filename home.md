@@ -1,17 +1,41 @@
 ---
 layout: home
-title: "Welcome to My Site"
+title: "MicroPython Easy Install"
 ---
 
-# Welcome to My Site
+## For ESP32 Famly MCUs
 
-<p>This is a <strong>custom HTML</strong> paragraph on my homepage.</p>
+Install the latest MicroPython release
+(<code>{% include mpVersion.txt %}</code>)
+on your MCU.
 
-<div class="custom-section">
-    <h2>About This Site</h2>
-    <p>This section is created using pure HTML.</p>
-</div>
+Select a build for a generic board with your flash and RAM size, or for a specific board:
 
-## Subhead
+<ul>
+<li>
+  <label><input type="radio" name="type" value="generic4m" /> Generic 4M Flash, RAM&lt;=1M</label>
+</li>
+<hr width="50%" align="left" color="gray" size="1px" />
+<li>
+  <label><input type="radio" name="type" value="c3_mini" /> Lolin C3 Mini</label>
+</li>
+<li>
+  <label><input type="radio" name="type" value="m5_stack_atom" /> M5 Stack Atom</label>
+</li>
+<li>
+  <label><input type="radio" name="type" value="tinyS3" /> Unexpected Maker TinyS3</label>
+</li>
+</ul>
 
 Content after subhead
+
+<script>
+  document.querySelectorAll('input[name="type"]').forEach(radio =>
+    radio.addEventListener("change", () => {
+      const button = document.querySelector('esp-web-install-button');
+      button.manifest = `./manifest_${radio.value}.json`;
+      button.classList.remove('invisible');
+    }
+  ));
+</script>
+
