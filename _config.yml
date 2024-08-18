@@ -1,4 +1,3 @@
-theme: just-the-docs
 exclude:
   - tidy.cfg
   - tools
