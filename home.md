@@ -27,11 +27,15 @@ Select a build for a generic board with your flash and RAM size, or for a specif
 </li>
 </ul>
 
+<style>
+  .invisible {
+    visibility: hidden;
+  }
+</style>
+
 <p class="button-row" align="center">
 <esp-web-install-button class="invisible"></esp-web-install-button>
 </p>
-
-<script type="module" src="https://unpkg.com/esp-web-tools@10.0.1/dist/web/install-button.js?module"></script>
 
 <script>
   document.querySelectorAll('input[name="type"]').forEach(radio =>
@@ -42,4 +46,6 @@ Select a build for a generic board with your flash and RAM size, or for a specif
     }
   ));
 </script>
+
+<script type="module" src="https://unpkg.com/esp-web-tools@10.0.1/dist/web/install-button.js?module"></script>
 
