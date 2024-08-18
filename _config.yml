@@ -4,6 +4,7 @@ exclude:
   - ReadMe.md
   - CNAME
 
+theme: minima
 title: MPEasy.Org
 description: MicroPython Easy Install for ESP32 Family MCUs
 url: MPEasy.Org
