@@ -27,13 +27,11 @@ Select a build for a generic board with your flash and RAM size, or for a specif
 </li>
 </ul>
 
-Content before button
-
 <p class="button-row" align="center">
 <esp-web-install-button class="invisible"></esp-web-install-button>
 </p>
 
-Content after button
+<script type="module" src="https://unpkg.com/esp-web-tools@10.0.1/dist/web/install-button.js?module"></script>
 
 <script>
   document.querySelectorAll('input[name="type"]').forEach(radio =>
@@ -44,6 +42,4 @@ Content after button
     }
   ));
 </script>
-
-<script type="module" src="https://unpkg.com/esp-web-tools@10.0.1/dist/web/install-button.js?module"></script>
 
