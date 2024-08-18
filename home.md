@@ -11,7 +11,7 @@ on your MCU.
 
 Select a build for a generic board with your flash and RAM size, or for a specific board:
 
-<ul>
+<ul style="list-style-type: none; padding-left: 0; margin-left: 0;">
 <li>
   <label><input type="radio" name="type" value="generic4m" /> Generic 4M Flash, RAM&lt;=1M</label>
 </li>
