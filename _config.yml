@@ -1,0 +1,6 @@
+theme: jekyll-theme-minimal
+exclude:
+  - tidy.cfg
+  - tools
+  - ReadMe.md
+  - CNAME
