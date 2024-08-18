@@ -1,16 +1,7 @@
 ---
+title: Frequently Asked Questions
 ---
-# Freqyently Asked Questions
-
 ## XXX: Category
-
-**Q: Why not support `.uf2` format downloads?**
-
-**A:** ESP32 boards lack the hardware to support this format.
-Many newer boards with the necessary hardware arrive
-without a UF2 bootloader installed in flash.
-It's at least as hard to get the right UF2 bootloader installed
-as it is to just install MicroPython from a `.bin` file.
 
 **Q: What version of MicroPython is installed?**
 
@@ -33,4 +24,12 @@ The focus here is simply on helping people install the latest version.
 support Espressif MCUs.
 Collaborators helping to add support for more MCUs
 are [welcome](https://github.com/MPEasy-Org/MPEasy.github.io/discussions/).
+
+**Q: Why not support `.uf2` format downloads?**
+
+**A:** ESP32 boards lack the hardware to support this format.
+Many newer boards with the necessary hardware arrive
+without a UF2 bootloader installed in flash.
+It's at least as hard to get the right UF2 bootloader installed
+as it is to just install MicroPython from a `.bin` file.
 
