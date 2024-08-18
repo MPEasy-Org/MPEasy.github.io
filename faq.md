@@ -1,6 +1,6 @@
 ---
 ---
-# Freqyently Asked Quesions
+# Freqyently Asked Questions
 
 ## XXX: Category
 
