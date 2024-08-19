@@ -25,15 +25,33 @@
   margin-bottom: 0.1rem;
 
   @include large {
+    font-size: 2rem;
+  }
+
+  @include medium {
+    font-size: 2rem;
+  }
+
+  @include small {
+    font-size: 2rem;
+  }
+}
+
+.project-tagline {
+  margin-bottom: 1rem;
+  font-weight: normal;
+  opacity: 0.7;
+
+  @include large {
     font-size: 1.25rem;
   }
 
   @include medium {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 
   @include small {
-    font-size: 1.75rem;
+    font-size: 1rem;
   }
 }
 

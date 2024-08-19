@@ -22,6 +22,8 @@ on your MCU.
 * [Connect](connect.html) Your MCU
 * Enter [Download Mode](download.html)
 
+### Install
+
 After completing the pre-install checklist above,
 select a build for a generic board with your flash and RAM size, or for a specific board:
 
