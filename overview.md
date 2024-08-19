@@ -3,6 +3,8 @@ title: "MicroPython Installation Overview"
 ---
 
 The order of these checks doesn't matter, but none are optional.
+An overview of the pre-install checklist follows.
+Click for details.
 
 ### Check [Browser](browser.html) Requirements
 
