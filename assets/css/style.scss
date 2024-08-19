@@ -1,0 +1,41 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+@mixin large {
+  @media screen and (min-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: #{$medium-breakpoint}) {
+    @content;
+  }
+}
+.project-name {
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+
+  @include large {
+    font-size: 1.25rem;
+  }
+
+  @include medium {
+    font-size: 1.25rem;
+  }
+
+  @include small {
+    font-size: 1.75rem;
+  }
+}
+

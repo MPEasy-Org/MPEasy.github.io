@@ -9,8 +9,6 @@ title: "MicroPython Easy Install"
   }
 </style>
 
-## For ESP32 Famly MCUs
-
 Install the latest MicroPython release
 (<code>{% include mpVersion.txt %}</code>)
 on your MCU.
