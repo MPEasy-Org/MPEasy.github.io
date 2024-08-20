@@ -20,7 +20,7 @@ on your MCU.
 * Check [USB Serial Drivers](drivers.html)
 * [Identify](identify.html) Your MCU Chip and Board
 * [Connect](connect.html) Your MCU
-* Enter [Download Mode](download.html)
+* Enter [Download Mode](downloadMode.html)
 
 ### Install
 

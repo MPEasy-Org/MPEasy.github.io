@@ -4,7 +4,7 @@ title: "MicroPython Installation Overview"
 
 The order of these checks doesn't matter, but none are optional.
 An overview of the pre-install checklist follows.
-Click for details.
+Click headers for details.
 
 ### Check [Browser](browser.html) Requirements
 
@@ -30,6 +30,6 @@ used on your board.
 
 Use an appropriate USB cable to connect your MCU to your PC.
 
-### Enter [Download Mode](download.html)
+### Enter [Download Mode](downloadMode.html)
 
 Some MCUs require a special sequence of button presses to put them into download mode.
