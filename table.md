@@ -15,5 +15,5 @@ title: "MCU Board Table"
 {: #board-table }
 
 <script type="text/javascript" class="init">
-new DataTable('#board-table');
+new DataTable('#board-table', {pageLength: -1});
 </script>
