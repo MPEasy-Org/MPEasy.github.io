@@ -24,8 +24,9 @@ on your MCU.
 
 ### Install
 
-> [!CAUTION]
-> Installing MicroPython will erase everything in the the MCU flash chip.
+<div class="alert alert-danger">
+    <strong>Caution:</strong>Installing MicroPython will erase everything in the the MCU flash chip.
+</div>
 
 After completing the pre-install checklist above,
 select a build for a generic board with your flash and RAM size, or for a specific board:
