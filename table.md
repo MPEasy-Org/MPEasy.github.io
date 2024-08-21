@@ -15,7 +15,5 @@ title: "MCU Board Table"
 {: #board-table }
 
 <script type="text/javascript" class="init">
-$(document).ready( function () {
-    $('board-table').DataTable();
-} );
+new DataTable('#example');
 </script>
