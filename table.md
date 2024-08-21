@@ -14,7 +14,8 @@ title: "MCU Board Table"
 | M5 Stack Atom | ESP32 | &lt;1M | 4M | Type-C | 1 | [![M5 Stack Atom photo](https://micropython.org/resources/micropython-media/boards/M5STACK_ATOM/m5stack_atom.thumb.jpg)](https://micropython.org/resources/micropython-media/boards/M5STACK_ATOM/m5stack_atom.jpg) |
 {: #board-table }
 
+<script>
 $(document).ready( function () {
     $('board-table').DataTable();
 } );
-
+</script>
