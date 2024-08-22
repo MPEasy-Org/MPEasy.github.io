@@ -25,7 +25,7 @@ on your MCU.
 ### Install
 
 <div class="alert alert-danger">
-    <strong>Caution:</strong>Installing MicroPython will erase everything in the the MCU flash chip.
+    <strong>Caution: </strong>Installing MicroPython will erase everything in the the MCU flash chip.
 </div>
 
 After completing the pre-install checklist above,
