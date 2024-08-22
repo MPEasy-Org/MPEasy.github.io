@@ -11,6 +11,10 @@
       "parts": [{ "path": "bin/ESP32_GENERIC_C3-mpDate-mpVersion.bin", "offset": 0 }]
     },
     {
+      "chipFamily": "ESP32-S2",
+      "parts": [{ "path": "firmware/ESP32_GENERIC_S2-20240602-v1.23.0.bin", "offset": 4096 }]
+    },
+    {
       "chipFamily": "ESP32-S3",
       "parts": [{ "path": "bin/ESP32_GENERIC_S3-FLASH_4M-mpDate-mpVersion.bin", "offset": 0 }]
     }
