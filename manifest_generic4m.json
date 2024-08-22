@@ -4,7 +4,7 @@
   "builds": [
     {
       "chipFamily": "ESP8266",
-      "parts": [{ "path": "firmware/ESP8266_GENERIC-20240602-v1.23.0.bin", "offset": 4096 }]
+      "parts": [{ "path": "bin/ESP8266_GENERIC-20240602-v1.23.0.bin", "offset": 0 }]
     },
     {
       "chipFamily": "ESP32",
